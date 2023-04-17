@@ -10,43 +10,43 @@
     <div class="box-principal">
         <div class="box-entrada">
             <form>
-                <h2></h2>
-                <input type="number">
+                <label>Valor</label>
+                <input type="number" min="1" placeholder="0">
 
                 <div class="box-tip">
-                    <h2></h2>
-                    <input type="button">
-                    <input type="button">
-                    <input type="button">
-                    <input type="button">
-                    <input type="button">
-                    <input type="number">
+                    <label>Gorjeta %</label>
+                    <input type="button" min="1" placeholder="5%">
+                    <input type="button" min="1" placeholder="10%">
+                    <input type="button" min="1" placeholder="15%">
+                    <input type="button" min="1" placeholder="25%">
+                    <input type="button" min="1" placeholder="50%">
+                    <input type="number" min="1" placeholder="Customizado">
                 </div>
 
-                <h2></h2>
-                <input type="number">
+                <label>Numero de pessoas</label>
+                <input type="number" min="1" placeholder="0">
             </form>
         </div>
         <div class="box-saida">
             <div>
                 <div>
-                    <h2></h2>
-                    <h3></h3>
+                    <h2>Valor da gorjeta</h2>
+                    <h3>/ pessoa</h3>
                 </div>
                 <div>
-                    <p></p>
+                    <p>$<span>0.00</span></p>
                 </div>
             </div>
             <div>
                 <div>
-                    <h2></h2>
-                    <h3></h3>
+                    <h2>Total</h2>
+                    <h3>/ pessoa</h3>
                 </div>
                 <div>
-                    <p></p>
+                    <p>$<span>0.00</span></p>
                 </div>
             </div>
-            <input type="submit">
+            <button type="btn" id="btn">RECARREGAR</button>
         </div>
     </div>
 
