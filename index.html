@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Tip-Calculator</title>
 </head>
 <body>
@@ -11,20 +13,20 @@
         <div class="box-entrada">
             <form>
                 <label>Valor</label>
-                <input type="number" min="1" placeholder="0">
+                <input class="input-valor" type="number" min="1" placeholder="0">
 
                 <div class="box-tip">
                     <label>Gorjeta %</label>
-                    <input type="button" min="1" placeholder="5%">
-                    <input type="button" min="1" placeholder="10%">
-                    <input type="button" min="1" placeholder="15%">
-                    <input type="button" min="1" placeholder="25%">
-                    <input type="button" min="1" placeholder="50%">
-                    <input type="number" min="1" placeholder="Customizado">
+                    <input class="input-porcento" type="button" min="1" placeholder="5%">
+                    <input class="input-porcento" type="button" min="1" placeholder="10%">
+                    <input class="input-porcento" type="button" min="1" placeholder="15%">
+                    <input class="input-porcento" type="button" min="1" placeholder="25%">
+                    <input class="input-porcento" type="button" min="1" placeholder="50%">
+                    <input class="input-porcento-customizado" type="number" min="1" placeholder="Customizado">
                 </div>
 
                 <label>Numero de pessoas</label>
-                <input type="number" min="1" placeholder="0">
+                <input class="input-pessoas" type="number" min="1" placeholder="0">
             </form>
         </div>
         <div class="box-saida">
