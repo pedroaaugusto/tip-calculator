@@ -1,0 +1,75 @@
+
+
+:root {
+    font-size: 10px;
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(185, 41%, 84%);
+}
+
+.box-principal{
+    display: flex;
+    width: 80rem;
+    height: 40rem;
+    padding: 4rem 3.5rem;
+    border-radius: 2rem;
+    gap: 4rem;
+    box-shadow: 0px 0px 12px -5px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.box-entrada{
+    width: 50%;
+    width: 100%;
+    margin: 1rem;
+    box-sizing: border-box; 
+}
+
+label{
+    display: block;
+}
+
+/*alterações gerais labels e inputs*/
+
+label{
+    font-size: 1.5rem;
+}
+
+input{
+    height: 5rem;
+    box-sizing: border-box; 
+    background-color: hsl(189, 41%, 97%);
+    border: solid 0.2rem;
+    border-color: hsl(0, 0%, 100%);
+    border-radius: 0.8rem;
+    box-shadow: inset 0px 0px 12px -7px;
+
+}
+
+input:hover{
+    border: solid 0.2rem;
+    border-color: hsl(184, 14%, 56%);
+}
+
+/*alterações gerais labels e inputs*/
+
+.input-valor{
+    text-align: right;
+    width: calc(100% - 1rem) ;
+}
+
+.box-saida{
+    width: 50%;
+    width: 100%;
+    padding: 4rem;
+    border-radius: 2rem;
+    box-sizing: border-box; 
+    box-shadow: inset 0px 0px 25px -4px;
+    background-color: hsl(183, 100%, 15%);
+}
