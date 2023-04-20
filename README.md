@@ -1,6 +1,6 @@
 # Tip-calculator
 
-Calcule a gorjeta de certo valor e porcentagem para um número determinado de pessoas de forma simples e ágil.
+Calcule a porcentagem de gorjeta de um valor e divida entre um número determinado de pessoas de forma simples e ágil.
 
 ## Objetivo
 
