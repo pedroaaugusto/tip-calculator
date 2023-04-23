@@ -12,21 +12,23 @@
     <div class="box-principal">
         <div class="box-entrada">
             <form>
-                <label>Valor</label>
-                <input class="input-valor" type="number" min="1" placeholder="0">
+                <label for="valor">Valor</label>
+                <input class="input-valor" id="valor" type="number" min="1" placeholder="0">
+                <img src="img/icon-dollar.svg">
 
                 <div class="box-tip">
-                    <label>Gorjeta %</label>
-                    <input class="input-porcento" type="button" min="1" placeholder="5%">
-                    <input class="input-porcento" type="button" min="1" placeholder="10%">
-                    <input class="input-porcento" type="button" min="1" placeholder="15%">
-                    <input class="input-porcento" type="button" min="1" placeholder="25%">
-                    <input class="input-porcento" type="button" min="1" placeholder="50%">
-                    <input class="input-porcento-customizado" type="number" min="1" placeholder="Customizado">
+                    <label for="porcento-customizado">Gorjeta %</label>
+                    <input class="input-porcento" id="porcento" type="button" min="1" value="5%">
+                    <input class="input-porcento" id="porcento" type="button" min="1" value="10%">
+                    <input class="input-porcento" id="porcento" type="button" min="1" value="15%">
+                    <input class="input-porcento" id="porcento" type="button" min="1" value="25%">
+                    <input class="input-porcento" id="porcento" type="button" min="1" value="50%">
+                    <input class="input-porcento-customizado" id="porcento-customizado" type="number" min="1" placeholder="Customizado">
                 </div>
 
-                <label>Numero de pessoas</label>
-                <input class="input-pessoas" type="number" min="1" placeholder="0">
+                <label for="pessoas">Numero de pessoas</label>
+                <input class="input-pessoas" id="pessoas" type="number" min="1" placeholder="0">
+                <img src="img/icon-person.svg">
             </form>
         </div>
         <div class="box-saida">
@@ -48,7 +50,7 @@
                     <p>$<span>0.00</span></p>
                 </div>
             </div>
-            <button type="btn" id="btn">RECARREGAR</button>
+            <button class="input-botao" id="btn" type="btn">RECARREGAR</button>
         </div>
     </div>
 

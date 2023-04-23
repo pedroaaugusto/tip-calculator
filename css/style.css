@@ -1,7 +1,12 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+/* font-family: 'Space Mono', monospace; */
 
 :root {
     font-size: 10px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    --width-inputs-tip: 11rem;
+    --entrada-text-color: 
 }
 
 body{
@@ -31,14 +36,11 @@ body{
     box-sizing: border-box; 
 }
 
+/*alterações gerais labels e inputs*/
 label{
     display: block;
-}
-
-/*alterações gerais labels e inputs*/
-
-label{
     font-size: 1.5rem;
+    color: hsl(186, 14%, 43%);
 }
 
 input{
@@ -49,20 +51,79 @@ input{
     border-color: hsl(0, 0%, 100%);
     border-radius: 0.8rem;
     box-shadow: inset 0px 0px 12px -7px;
-
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
 }
 
 input:hover{
     border: solid 0.2rem;
     border-color: hsl(184, 14%, 56%);
 }
-
 /*alterações gerais labels e inputs*/
 
-.input-valor{
-    text-align: right;
-    width: calc(100% - 1rem) ;
+form > label{
+    margin-bottom: 1.5rem;
 }
+
+.input-valor, .input-pessoas{
+    text-align: right;
+    padding: 2rem;
+    width: calc(100% - 1rem) ;
+    color: hsl(183, 100%, 15%);
+}
+
+input[type="number"]::placeholder {
+    color: hsl(186, 14%, 43%);
+}
+
+input.input-valor,input.input-pessoas[type="number"]::placeholder {
+    font-size: 2rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  display: none;
+}
+
+img{
+    position: relative;
+    bottom: 3.35rem;
+    left: 2rem;
+}
+
+.box-tip{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box-tip > label{
+    width: 100%;
+    padding-top: 1.7rem;
+}
+
+.input-porcento{
+    width: var(--width-inputs-tip);
+    margin-top: 1.5rem;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(183, 100%, 15%);
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.6), inset -1px -1px 3px rgba(0, 0, 0, 0.6);
+    font-size: 2rem;
+}
+
+.input-porcento-customizado{
+    width: var(--width-inputs-tip);
+    margin-top: 1.5rem;
+    text-align: right;
+    padding: 0.8rem;
+    color: hsl(183, 100%, 15%);
+}
+
+div + label{
+    padding-top: 3.4rem;
+}
+ 
+/* ta pro final */
 
 .box-saida{
     width: 50%;
@@ -70,6 +131,6 @@ input:hover{
     padding: 4rem;
     border-radius: 2rem;
     box-sizing: border-box; 
-    box-shadow: inset 0px 0px 25px -4px;
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
     background-color: hsl(183, 100%, 15%);
 }
