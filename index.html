@@ -9,6 +9,7 @@
     <title>Tip-Calculator</title>
 </head>
 <body>
+    <p><span>--</span> não pode ser zero</p>
     <div class="box-principal">
         <div class="box-entrada">
             <form>
@@ -17,7 +18,7 @@
                 <img src="img/icon-dollar.svg">
 
                 <div class="box-tip">
-                    <label for="porcento-customizado">Gorjeta %</label>
+                    <label for="porcento-customizado">Gorjeta %</label>                   
                     <input class="input-porcento" id="porcento" type="button" min="1" value="5%">
                     <input class="input-porcento" id="porcento" type="button" min="1" value="10%">
                     <input class="input-porcento" id="porcento" type="button" min="1" value="15%">
@@ -25,32 +26,34 @@
                     <input class="input-porcento" id="porcento" type="button" min="1" value="50%">
                     <input class="input-porcento-customizado" id="porcento-customizado" type="number" min="1" placeholder="Customizado">
                 </div>
-
+                
                 <label for="pessoas">Numero de pessoas</label>
                 <input class="input-pessoas" id="pessoas" type="number" min="1" placeholder="0">
                 <img src="img/icon-person.svg">
             </form>
         </div>
         <div class="box-saida">
-            <div>
-                <div>
+            <div class="box-gorjeta">
+                <div class="box-saida-gorjeta">
                     <h2>Valor da gorjeta</h2>
                     <h3>/ pessoa</h3>
                 </div>
-                <div>
+                <div class="box-valor-gorjeta">
                     <p>$<span>0.00</span></p>
                 </div>
             </div>
-            <div>
-                <div>
+            <div class="box-total">
+                <div class="box-saida-total">
                     <h2>Total</h2>
                     <h3>/ pessoa</h3>
                 </div>
-                <div>
+                <div class="box-valor-total">
                     <p>$<span>0.00</span></p>
                 </div>
             </div>
-            <button class="input-botao" id="btn" type="btn">RECARREGAR</button>
+            <div class="box-botao">
+                <button class="input-botao" id="btn" type="btn">RECARREGAR</button>
+            </div>
         </div>
     </div>
 
