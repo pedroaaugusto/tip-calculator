@@ -11,6 +11,7 @@
 
 body{
     display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     align-items: center;
@@ -18,10 +19,17 @@ body{
     background-color: hsl(185, 41%, 84%);
 }
 
+body > p{
+    display: none;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    color: rgb(241, 67, 67);
+}
+
 .box-principal{
     display: flex;
     width: 80rem;
-    height: 40rem;
+    min-height: 40rem;
     padding: 4rem 3.5rem;
     border-radius: 2rem;
     gap: 4rem;
@@ -34,6 +42,11 @@ body{
     width: 100%;
     margin: 1rem;
     box-sizing: border-box; 
+}
+
+.span{
+    display: flex;
+    justify-content: space-between;
 }
 
 /*alterações gerais labels e inputs*/
@@ -58,6 +71,16 @@ input{
 input:hover{
     border: solid 0.2rem;
     border-color: hsl(184, 14%, 56%);
+    cursor: pointer;
+}
+
+input:active{
+    border-color: hsl(172, 67%, 45%);
+}
+
+input:focus{
+    border: solid 0.2rem;
+    border-color: hsl(172, 67%, 45%);
 }
 /*alterações gerais labels e inputs*/
 
@@ -72,11 +95,16 @@ form > label{
     color: hsl(183, 100%, 15%);
 }
 
+.input-valor:focus, .input-pessoas:focus{
+    border-color: hsl(172, 67%, 45%);
+    outline: none;
+}
+
 input[type="number"]::placeholder {
     color: hsl(186, 14%, 43%);
 }
 
-input.input-valor,input.input-pessoas[type="number"]::placeholder {
+input.input-valor::placeholder, input.input-pessoas::placeholder {
     font-size: 2rem;
 }
 
@@ -108,7 +136,17 @@ img{
     color: hsl(0, 0%, 100%);
     background-color: hsl(183, 100%, 15%);
     box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.6), inset -1px -1px 3px rgba(0, 0, 0, 0.6);
-    font-size: 2rem;
+    font-size: 2.3rem;
+}
+
+.input-porcento:active{
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(185, 41%, 84%);
+}
+
+.input-porcento:focus{
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(185, 41%, 84%);
 }
 
 .input-porcento-customizado{
@@ -119,11 +157,14 @@ img{
     color: hsl(183, 100%, 15%);
 }
 
+.input-porcento-customizado:focus{
+    border-color: hsl(172, 67%, 45%);
+    outline: none;
+}
+
 div + label{
     padding-top: 3.4rem;
 }
- 
-/* ta pro final */
 
 .box-saida{
     width: 50%;
@@ -133,4 +174,55 @@ div + label{
     box-sizing: border-box; 
     box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
     background-color: hsl(183, 100%, 15%);
+}
+
+.box-gorjeta{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.box-saida-gorjeta > h2, .box-saida-total > h2{
+    font-size: 1.3rem;
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 0.9rem;
+}
+
+.box-saida-gorjeta > h3, .box-saida-total > h3{
+    font-size: 1.3rem;
+    color: hsl(184, 14%, 56%);
+}
+
+.box-valor-gorjeta > p, .box-valor-total > p{
+    font-size: 3.5rem;
+    color: hsl(172, 67%, 45%);
+}
+
+.box-total{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 58%;
+}
+
+.box-botao{
+    display: flex;
+    align-items: center;
+}
+
+.box-botao > button{
+    width: 100%;
+    height: 4rem;
+    border: none;
+    border-radius: 1rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.5rem;
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.6), inset -1px -1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.box-botao > button:active{
+    height: 3.9rem;
+    width: 99%;
 }
