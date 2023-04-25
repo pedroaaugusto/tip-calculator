@@ -104,8 +104,12 @@ input[type="number"]::placeholder {
     color: hsl(186, 14%, 43%);
 }
 
-input.input-valor::placeholder, input.input-pessoas::placeholder {
+input.input-valor, input.input-pessoas, [type="number"]::placeholder {
     font-size: 2rem;
+}
+
+input.input-porcento-customizado[type="number"]::placeholder {
+    font-size: 1.3rem;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
