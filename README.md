@@ -107,7 +107,7 @@ PREENCHER COM IMG
 #### (Incompleto)
 
 - [X] Criar Html
-- [ ] Estilizar página com css e utilizando tambem variaveis
+- [X] Estilizar página com css e utilizando tambem variaveis
 - [ ] Criar um foco em todos os elementos interativos da página
 - [ ] Não permitir que o usuário passe para a próxima inserção sem antes ter executado a anterior
 - [ ] Criar lógica por tras dos calculos
