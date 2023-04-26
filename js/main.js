@@ -1,39 +1,41 @@
 const valor = document.querySelector("#valor")
-const porcentagemBotao = document.querySelector("#porcento")
+const porcentagemBotao = document.querySelectorAll("#porcento")
 const porcentagem = document.querySelector("#porcento-customizado")
 const pessoas = document.querySelector("#pessoas")
 
+function digitarValor()
+{
+    valor.addEventListener('input', (evtValor) => {
+        const valueValor = evtValor.target.value
+        console.log(valueValor)
+    })
+}
 
-valor.addEventListener('input', (evtValor) => {
-    const valueValor = evtValor.target.value
-    console.log(valueValor)
-})
+function clickPorcentagem()
+{
+    porcentagemBotao.forEach(input => {
+        input.addEventListener('click', () => {
+            const valuePorcentagem = input.value
+            const numeroPorcentagem = valuePorcentagem.replace(/[^0-9]/g, "")
+            porcentagem.value = ""
+            console.log(numeroPorcentagem)
+        }) 
+    })
+}
 
-// porcentagemBotao.addEventListener('click', () => {
-//     const valuePorcentagem = porcentagemBotao.value
-//     porcentagem = 0
-//     console.log(valuePorcentagem)
-//     console.log(porcentagem)
-// }) 
-
-// porcentagemBotao.forEach((input) => {
-//     input.addEventListener('click', () => {
-//         const valuePorcentagem = porcentagemBotao.value
-//         porcentagem = 0
-//         console.log(valuePorcentagem)
-//         console.log(porcentagem)
-//     }) 
-// });
-
-porcentagem.addEventListener('input', (evtPorcentagem) => {
+function digitarPorcentagem()
+{
+    porcentagem.addEventListener('input', (evtPorcentagem) => {
         const valuePorcentagem = evtPorcentagem.target.value
+        valuePorcentagem = ""
         console.log(valuePorcentagem)
-})
+    })
+}
 
-pessoas.addEventListener('input', (evtPessoas) => {
+function digitarPessoas()
+{
+    pessoas.addEventListener('input', (evtPessoas) => {
     const valuePessoas = evtPessoas.target.value
     console.log(valuePessoas)
-})
-
-
-
+    })
+}
