@@ -14,21 +14,21 @@
         <div class="box-entrada">
             <form>
                 <label for="valor">Valor</label>
-                <input class="input-valor" id="valor" type="number" min="1" placeholder="0">
+                <input class="input-valor" id="valor" type="number" min="1" placeholder="0" oninput="digitarValor()">
                 <img src="img/icon-dollar.svg">
 
                 <div class="box-tip">
                     <label for="porcento-customizado">Gorjeta %</label>                   
-                    <input class="input-porcento" id="porcento" type="button" min="1" value="5%">
-                    <input class="input-porcento" id="porcento" type="button" min="1" value="10%">
-                    <input class="input-porcento" id="porcento" type="button" min="1" value="15%">
-                    <input class="input-porcento" id="porcento" type="button" min="1" value="25%">
-                    <input class="input-porcento" id="porcento" type="button" min="1" value="50%">
-                    <input class="input-porcento-customizado" id="porcento-customizado" type="number" min="1" placeholder="Customizado">
+                    <input class="input-porcento" id="porcento" type="button" min="1" value="5%"  onclick="clickPorcentagem()">
+                    <input class="input-porcento" id="porcento" type="button" min="1" value="10%" onclick="clickPorcentagem()">
+                    <input class="input-porcento" id="porcento" type="button" min="1" value="15%" onclick="clickPorcentagem()">
+                    <input class="input-porcento" id="porcento" type="button" min="1" value="25%" onclick="clickPorcentagem()">
+                    <input class="input-porcento" id="porcento" type="button" min="1" value="50%" onclick="clickPorcentagem()">
+                    <input class="input-porcento-customizado" id="porcento-customizado" type="number" min="1" placeholder="Customizado" oninput="digitarPorcentagem()">
                 </div>
                 
                 <label for="pessoas">Numero de pessoas</label>
-                <input class="input-pessoas" id="pessoas" type="number" min="1" placeholder="0">
+                <input class="input-pessoas" id="pessoas" type="number" min="1" placeholder="0" oninput="digitarPessoas()">
                 <img src="img/icon-person.svg">
             </form>
         </div>
