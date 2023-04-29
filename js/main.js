@@ -3,39 +3,43 @@ const porcentagemBotao = document.querySelectorAll("#porcento")
 const porcentagem = document.querySelector("#porcento-customizado")
 const pessoas = document.querySelector("#pessoas")
 
+
+//recebe valor da conta 
 function digitarValor()
 {
-    valor.addEventListener('input', (evtValor) => {
-        const valueValor = evtValor.target.value
-        console.log(valueValor)
-    })
+    var valueValor = valor.value
+    console.log(valueValor)
+    return valueValor
 }
 
+//recebe porcentagem de gorjeta por botao
 function clickPorcentagem()
 {
     porcentagemBotao.forEach(input => {
         input.addEventListener('click', () => {
-            const valuePorcentagem = input.value
-            const numeroPorcentagem = valuePorcentagem.replace(/[^0-9]/g, "")
+            var valuePorcentagem = (input.value.replace(/[^0-9]/g, "")) / 100
             porcentagem.value = ""
-            console.log(numeroPorcentagem)
+            console.log(valuePorcentagem)
+            return valuePorcentagem
         }) 
     })
 }
 
+//recebe porcentagem de gorjeta por texto
 function digitarPorcentagem()
 {
-    porcentagem.addEventListener('input', (evtPorcentagem) => {
-        const valuePorcentagem = evtPorcentagem.target.value
-        valuePorcentagem = ""
-        console.log(valuePorcentagem)
-    })
+
+    var valuePorcentagem = (porcentagem.value) / 100
+    porcentagemBotao.value = ""
+    console.log(valuePorcentagem)
+    return valuePorcentagem
+    
 }
 
+//recebe numero de pessoas p/ divisao
 function digitarPessoas()
 {
-    pessoas.addEventListener('input', (evtPessoas) => {
-    const valuePessoas = evtPessoas.target.value
+    var valuePessoas = pessoas.value
     console.log(valuePessoas)
-    })
+    return valuePessoas
 }
