@@ -104,7 +104,7 @@ PREENCHER COM IMG
 -->
 
 ## Próximos passos 
-#### (Incompleto)
+#### (Completo)
 
 - [X] Criar Html
 - [X] Estilizar página com css e utilizando tambem variaveis
