@@ -19,7 +19,7 @@ body{
     background-color: hsl(185, 41%, 84%);
 }
 
-body > p{
+#aviso{
     display: none;
     padding-bottom: 1rem;
     font-size: 1.5rem;
