@@ -110,8 +110,8 @@ PREENCHER COM IMG
 - [X] Estilizar página com css e utilizando tambem variaveis
 - [X] Criar um foco em todos os elementos interativos da página
 - [X] Criar lógica por tras dos calculos
-- [ ] Fazer com que o resultado seja atualizado assim que o usuario troca alguma informação
-- [ ] Permitir que usuário recarregue a página atravez de um botão
+- [X] Fazer com que o resultado seja atualizado assim que o usuario troca alguma informação
+- [X] Permitir que usuário recarregue a página atravez de um botão
 
 ### Tecnologias utilizadas
 
