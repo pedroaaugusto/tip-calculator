@@ -2,12 +2,13 @@ const valor = document.querySelector("#valor")
 const porcentagemBotao = document.querySelectorAll("#porcento")
 const porcentagem = document.querySelector("#porcento-customizado")
 const pessoas = document.querySelector("#pessoas")
+const recarregar = document.querySelector("#btn")
 const spanGorjeta = document.querySelector("#spangorjeta")
 const spanValor = document.querySelector("#spanvalor")
 
 let valueValor = 0.0
 let valuePessoas = 1
-let valuePorcentagem = 0.15
+let valuePorcentagem = 0.00
 spanGorjeta.innerHTML = (0.0).toFixed(2);
 spanValor.innerHTML = (0.0).toFixed(2);
 
@@ -55,4 +56,15 @@ function calculos()
         spanGorjeta.innerHTML = gorjeta.toFixed(2)
         spanValor.innerHTML = valor.toFixed(2);
     } 
+}
+
+//recarrega pagina
+function clickRecarregar()
+{
+    valor.value = ""
+    porcentagemBotao.value = ""
+    porcentagem.value = ""
+    pessoas.value = ""
+    spanGorjeta.innerHTML = (0.0).toFixed(2);
+    spanValor.innerHTML = (0.0).toFixed(2);
 }
