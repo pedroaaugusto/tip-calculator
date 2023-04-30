@@ -9,7 +9,7 @@
     <title>Tip-Calculator</title>
 </head>
 <body>
-    <p><span>--</span> não pode ser zero</p>
+    <p id="aviso">Valor não pode ser zero</p>
     <div class="box-principal">
         <div class="box-entrada">
             <form>
@@ -52,7 +52,7 @@
                 </div>
             </div>
             <div class="box-botao">
-                <button class="input-botao" id="btn" type="btn">RECARREGAR</button>
+                <button class="input-botao" id="btn" type="btn" onclick="clickRecarregar()">RECARREGAR</button>
             </div>
         </div>
     </div>
