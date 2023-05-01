@@ -8,7 +8,7 @@ O objetivo deste projeto foi achar uma solução para um desafio do Front-end Me
 
 ## Acesse
 
-<a href=" PREENCHER ">Calculadora de gorjeta</a>
+<a href="https://dancing-cactus-ca52c8.netlify.app">Calculadora de gorjeta</a>
 
 ## Tabela de conteúdo 
 
@@ -84,8 +84,8 @@ PREENCHER COM IMG
 
 ### Links
 
-- URL da solução: [GitHub]( PREENCHER ) <!-- ex (https://spiffy-liger-ebc6b9.netlify.app/) -->
-- URL do site: [Site]( PREENCHER )
+- URL da solução: [GitHub](https://github.com/pedroaaugusto/tip-calculator)
+- URL do site: [Site](https://dancing-cactus-ca52c8.netlify.app)
 
 ## Meu processo
 
