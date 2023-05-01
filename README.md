@@ -166,7 +166,7 @@ function digitarValor()
 valuePorcentagem = Number((input.value.replace(/[^0-9]/g, "")) / 100)
 ```
 
-#### Aprendi a usar o Event Bubbling onde seleciono elementos filhos com base em um elemento pai atravez do DOM ;
+#### Aprendi a selecionae elementos filhos com base em um elemento pai atravez do DOM ;
 
 ```js
 const paiGorjeta = document.querySelector(".box-tip")
