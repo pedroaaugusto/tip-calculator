@@ -152,7 +152,7 @@ btn.addEventListener("click", function(e) {
 
 ### Status do projeto
 
-Em desenvolvimento.
+Finalizado. Aguardando melhorias.
 
 ### Recursos úteis
 
