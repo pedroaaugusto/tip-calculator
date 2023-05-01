@@ -4,7 +4,7 @@ Calcule a porcentagem de gorjeta de um valor e divida entre um número determina
 
 ## Objetivo
 
-O objetivo deste projeto foi achar uma solução para um desafio do Front-end Mentor <a href="https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX">Tip calculator app</a> onde crio uma calculadora de gorjeta, tendo em mente principalmente aprimorar habilidades em JavaScript, validação de formulários, responsividade.
+O objetivo deste projeto foi achar uma solução para um desafio do Front-end Mentor <a href="https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX">Tip calculator app</a> onde crio uma calculadora de gorjeta, tendo em mente principalmente aprimorar habilidades em JavaScript, DOM, validação de formulários e responsividade.
 
 ## Acesse
 
