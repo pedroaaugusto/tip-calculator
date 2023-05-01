@@ -6,6 +6,7 @@ const recarregar = document.querySelector("#btn")
 const spanGorjeta = document.querySelector("#spangorjeta")
 const spanValor = document.querySelector("#spanvalor")
 const spanAviso = document.querySelector("#aviso")
+const paiGorjeta = document.querySelector(".box-tip")
 
 let valueValor = 0.0
 let valuePessoas = 1
@@ -18,7 +19,7 @@ function digitarValor()
 {
     valueValor = Number(valor.value)
     apareceErro(valueValor, valor)
-    calculos()
+    calculos(valuePorcentagem)
 }
 
 //recebe numero de pessoas p/ divisao
@@ -26,20 +27,21 @@ function digitarPessoas()
 {
     valuePessoas = Number(pessoas.value)
     apareceErro(valuePessoas, pessoas)
-    calculos()
+    calculos(valuePorcentagem)
 }
 
 //recebe porcentagem de gorjeta por botao
-function clickPorcentagem()
+function clickPorcentagem() 
 {
-    porcentagemBotao.forEach(input => {
-        input.addEventListener('click', () => {
-            valuePorcentagem = Number((input.value.replace(/[^0-9]/g, "")) / 100)
-            porcentagem.value = ""
-            calculos()
-        }) 
+    paiGorjeta.addEventListener('click', (e) => {
+        const target = e.target
+        const valuePorcentagem = Number(target.value.replace(/[^0-9]/g, "") / 100)
+        porcentagem.value = ""
+        calculos(valuePorcentagem)
     })
 }
+
+clickPorcentagem()
 
 //recebe porcentagem de gorjeta por texto
 function digitarPorcentagem()
@@ -47,14 +49,14 @@ function digitarPorcentagem()
     valuePorcentagem = Number((porcentagem.value) / 100)
     porcentagemBotao.value = ""
     apareceErro(valuePorcentagem, porcentagem)
-    calculos()
+    calculos(valuePorcentagem)
 }
 
 //calcula valor da gorjeta e valor do total por pessoa
-function calculos()
+function calculos(prct)
 {
     if (valueValor >= 1) {
-        let gorjeta = (valueValor * valuePorcentagem) / valuePessoas
+        let gorjeta = (valueValor * prct) / valuePessoas
         let valor = (valueValor + gorjeta) / valuePessoas
         console.log(gorjeta)
         spanGorjeta.innerHTML = gorjeta.toFixed(2)
@@ -83,6 +85,8 @@ function apareceErro(value, input)
     if (value === 0) {
         spanAviso.style.display = "block"
         input.style.borderColor = "red"
+        spanGorjeta.innerHTML = (0.0).toFixed(2);
+        spanValor.innerHTML = (0.0).toFixed(2);
     } else {
         spanAviso.style.display = "none"
         input.style.borderColor = "hsl(0, 0%, 100%)"
