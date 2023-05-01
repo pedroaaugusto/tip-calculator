@@ -19,7 +19,7 @@ O objetivo deste projeto foi achar uma solução para um desafio do Front-end Me
 - [Meu processo](#meu-processo)
   - [Construido com](#construído-com)
   - [Features](#features)
-  - [Próximos passos](#Próximos-passos)
+  - [Próximos passos](#próximos-passos)
   - [Tecnologias utilizadas](#tecnologias-utilizadas)
   - [O que aprendi](#o-que-aprendi)
   - [Status do projeto](#status-do-projeto)
@@ -105,13 +105,10 @@ Funcionalidades:
 
 ## Features
 
-<!--
-
-:hammer_and_wrench: @ <br>
-:iphone: Mobile-First ; <br>
-:fountain_pen: Conventional Commits ;
-
--->
+:hammer_and_wrench: Cálculo de gorjeta com base em uma porcentagem escolhida pelo usuário ; <br>
+:iphone: Validação dos dados inseridos pelo usuário para garantir que sejam números válidos ; <br>
+:fountain_pen: Atualização automática ; <br>
+:currency_exchange: Opção de recarregamento de página ;
 
 ## Próximos passos 
 #### (Completo)
@@ -125,30 +122,49 @@ Funcionalidades:
 
 ### Tecnologias utilizadas
 
-<!--
-
-- Tags semânticas
 - Arquitetura de Software
 - Unidades relativas
 - JavaScript
 - Convencional Commits
-- Mobile First
-
--->
+- FlexBox
+- Var CSS
 
 ### O que aprendi
 
-<!--
-
-#### Aprendi a criar um evento e fazer com que o formulário não seja enviado com "preventDefault" ;
-```js
-btn.addEventListener("click", function(e) {
-
-    e.preventDefault();
-
-});
+#### Aprendi a declarar eventos inline usando on'evento'="função" ;
+```html
+<div class="box-tip">
+    <label for="porcento-customizado">Gorjeta %</label>                   
+    <input class="input-porcento" id="porcento" type="button" min="1" value="5%"  onclick="clickPorcentagem()">
+    <input class="input-porcento" id="porcento" type="button" min="1" value="10%" onclick="clickPorcentagem()">
+    <input class="input-porcento" id="porcento" type="button" min="1" value="15%" onclick="clickPorcentagem()">
+    <input class="input-porcento" id="porcento" type="button" min="1" value="25%" onclick="clickPorcentagem()">
+    <input class="input-porcento" id="porcento" type="button" min="1" value="50%" onclick="clickPorcentagem()">
+    <input class="input-porcento-customizado" id="porcento-customizado" type="number" min="1" placeholder="Customizado" oninput="digitarPorcentagem()">
+</div>
 ```
--->
+
+#### Aprendi a declarar eventos no JS, chamando o evento e a função que é executada quando o evento é escutado ;
+
+```js
+const valor = document.querySelector("#valor")
+
+valor.addEventListner('input', digitarValor)
+
+//recebe valor da conta 
+function digitarValor()
+{
+    valueValor = Number(valor.value)
+    apareceErro(valueValor, valor)
+    calculos()
+}
+```
+
+#### Aprendi a substituir tudo que não é numero dentro de uma string com replace() no caso ela primeir busca qualquer numero que não esteja (^) entre 0 e 9 (0-9) e substitui por um string vazia ("") ;
+
+```js
+valuePorcentagem = Number((input.value.replace(/[^0-9]/g, "")) / 100)
+```
 
 ### Status do projeto
 
@@ -156,13 +172,10 @@ Finalizado. Aguardando melhorias.
 
 ### Recursos úteis
 
-<!--
-
 - [Curso sobre JavaScript](https://www.cursoemvideo.com/curso/javascript/) - Curso com ótima didática para quem busca dar os primeiros passos em JavaScript.
 - [Escopo JavaScript](https://medium.com/weyes/entendendo-o-uso-de-escopo-no-javascript-3669172ca5ba) - Site ótimo para entender como funciona o escopo no JavaScript.
 - [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/) - Ótimo conteúdo sobre Conventional Commits, importantíssimo para lógica de commits ajuda a melhorar a qualidade do código-fonte, tornando as alterações mais fáceis de entender e rastrear.
-
--->
+- [FlexBox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Ótimo conteúdo sobre FlexBox.
 
 ## Autor
 
