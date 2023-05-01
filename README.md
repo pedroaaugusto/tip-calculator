@@ -37,50 +37,60 @@ Funcionalidades:
 - Veja os estados de foco para todos os elementos interativos na página
 - Calcule a gorjeta correta e o custo total da conta por pessoa
 
-### Capturas de tela  
+### Capturas de tela
 
-#### layout mobile ( PREENCHER px) <br>
+### Capturas de tela - interface desejada 
 
-<table>
-  <tr>
-    <td>
-      <!-- coluna 1 -->
-      <a href="link_da_imagem1"><img src=" PREENCHER " alt=" PREENCHER Descrição da imagem"></a>
-    </td>
-    <td>
-      <!-- coluna 2 -->
-      <a href="link_da_imagem2"><img src=" PREENCHER " alt=" PREENCHER Descrição da imagem"></a>
-    </td>
-    <td>
-      <!-- coluna 3 -->
-      <a href="link_da_imagem3"><img src=" PREENCHER " alt=" PREENCHER Descrição da imagem"></a>
-    </td>
-  </tr>
-</table>
-
-#### layout medium devices ( PREENCHER px) <br>
+#### layout mobile (375px) <br>
 
 <table>
   <tr>
     <td>
       <!-- coluna 1 -->
-      <a href="link_da_imagem1"><img src=" PREENCHER " alt=" PREENCHER Descrição da imagem"></a>
+      <a href="link_da_imagem1"><img src="https://user-images.githubusercontent.com/115605744/235394307-3fe615ab-d5f4-4af3-8af2-1ac31c495358.jpg" alt=" PREENCHER Descrição da imagem"></a>
+    </td>
+</table>
+
+#### layout desktop (1440px) <br>
+
+![desktop-design-empty](https://user-images.githubusercontent.com/115605744/235394126-b51e5c1e-369e-41af-8b67-cf1be43cd3e8.jpg)
+
+#### layout active desktop (1440px) <br>
+
+![active-states](https://user-images.githubusercontent.com/115605744/235394153-ece65439-2de1-4951-9441-79d2b109c62d.jpg)
+
+![desktop-design-completed](https://user-images.githubusercontent.com/115605744/235394161-fc6a641d-6683-4273-a246-077cc341240a.jpg)
+
+### Capturas de tela - interface obtida 
+
+#### layout mobile (375px) <br>
+
+<table>
+  <tr>
+    <td>
+      <!-- coluna 1 -->
+      <a href="link_da_imagem1"><img src="https://user-images.githubusercontent.com/115605744/235395288-c98e3bb1-b9fa-45a3-ac00-ceb86d2c57a9.png" alt=" PREENCHER Descrição da imagem"></a>
     </td>
     <td>
       <!-- coluna 2 -->
-      <a href="link_da_imagem2"><img src=" PREENCHER " alt=" PREENCHER Descrição da imagem"></a>
+      <a href="link_da_imagem2"><img src="https://user-images.githubusercontent.com/115605744/235395336-1aed3125-c685-4a82-8b2b-8ae518b50549.png" alt=" PREENCHER Descrição da imagem"></a>
     </td>
     <td>
       <!-- coluna 3 -->
-      <a href="link_da_imagem3"><img src=" PREENCHER " alt=" PREENCHER Descrição da imagem"></a>
+      <a href="link_da_imagem2"><img src="https://user-images.githubusercontent.com/115605744/235395867-92ebb5d3-b0cb-4184-86db-6c31b3fa3d91.png" alt=" PREENCHER Descrição da imagem"></a>
     </td>
   </tr>
 </table>
 
-#### layout desktop ( PREENCHER px) <br>
+#### layout desktop (1440px) <br>
 
-PREENCHER COM IMG
-PREENCHER COM IMG
+![tipdesk1](https://user-images.githubusercontent.com/115605744/235395464-e293990d-002f-4f56-9af6-97919915f02a.png)
+
+#### layout active desktop (1440px) <br>
+
+![tipdesk2](https://user-images.githubusercontent.com/115605744/235395812-e22cb87e-04a5-45d5-8852-b2febdbc0e7a.png)
+
+![tipdesk3](https://user-images.githubusercontent.com/115605744/235395576-aaf8fb4d-6c24-4a0e-9448-01c3743a2853.png)
 
 ### Links
 
