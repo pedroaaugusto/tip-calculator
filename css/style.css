@@ -230,3 +230,52 @@ div + label{
     height: 3.9rem;
     width: 99%;
 }
+
+@media (max-width: 375px) {
+
+    .box-entrada{
+        display: block;
+        width: 360px;
+    }
+
+    form{
+        width: 360px;
+    }
+
+    .box-tip{
+        width: 90%;
+        justify-content: space-evenly;
+        
+    }
+    
+    .box-principal{
+        display: block;
+        width: 375px;
+        height: 80vh;
+        padding: 0rem;
+        border-radius: 0.5rem 2rem 0 0;
+        gap: 0rem;
+    }
+
+    .box-saida{
+        width: 100vw;
+        padding: 4rem;
+        border-radius: 2rem 2rem 0 0;
+        box-sizing: border-box; 
+        box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+        background-color: hsl(183, 100%, 15%);
+    }
+
+    .box-gorjeta{
+        display: block;
+    }
+
+    .box-saida-gorjeta > h3, .box-saida-total > h3{
+        padding-bottom: 2rem;
+    }
+
+    .box-total{
+        display: block;
+    }
+    
+}
